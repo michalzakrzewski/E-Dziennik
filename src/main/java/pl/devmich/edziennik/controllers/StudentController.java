@@ -17,9 +17,10 @@ public class StudentController {
     StudentRepository studentRepository;
 
     @RequestMapping(value = "/")
-    public String showPage(Model model, @RequestParam(defaultValue = "0") int page){
+    public String showPage(Model model, @RequestParam(defaultValue="0") int page){
 
         model.addAttribute("data", studentRepository.findAll(new PageRequest(page, 4)));
+        model.addAttribute("currentPage", page);
         return "index";
     }
 
