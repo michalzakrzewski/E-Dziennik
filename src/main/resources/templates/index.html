@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <button class="btn btn-success nBtn">New</button>
         <div class="card">
             <div class="card-block">
                 <table class="table table-hover">
@@ -17,7 +18,6 @@
                             <th>ID</th>
                             <th>FirstName</th>
                             <th>LastName</th>
-                            <th>Age</th>
                             <th>Degree</th>
                         </tr>
                     </thead>
@@ -26,9 +26,11 @@
                             <td th:text="${student.id}"></td>
                             <td th:text="${student.firstName}"></td>
                             <td th:text="${student.lastName}"></td>
-                            <td th:text="${student.age}"></td>
                             <td th:text="${student.degree}"></td>
-                            <td><a th:href="@{findOne/(id=${student.id})}" class="btn btn-primary eBtn">Edit</a></td>
+                            <td>
+                                <a th:href="@{findOne/(id=${student.id})}" class="btn btn-primary eBtn">Edit</a>
+                                <a th:href="@{delete/(id=${student.id})}" class="btn btn-danger delBtn">Delete</a>
+                            </td>
 
                         </tr>
                     </tbody>
@@ -69,10 +71,6 @@
                                 <input type="text" class="form-control" id="lastName" name="lastName" value=""/>
                             </div>
                             <div class="form-group">
-                                <label for="age" class="col-form-label">Age:</label>
-                                <input type="text" class="form-control" id="age" name="age" value=""/>
-                            </div>
-                            <div class="form-group">
                                 <label for="degree" class="col-form-label">Degree:</label>
                                 <input type="text" class="form-control" id="degree" name="degree" value=""/>
                             </div>
@@ -87,6 +85,29 @@
             </div>
             </form>
         </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="alert alert-danger">
+                            Are you sure you want to delete this student?
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="" class="btn btn-danger" id="delRef">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </body>
 </html>
