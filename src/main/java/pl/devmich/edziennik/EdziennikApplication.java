@@ -19,20 +19,23 @@ public class EdziennikApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		studentRepository.save(new Student("Michał", "Zakrzewski", 23, 4.5));
-		studentRepository.save(new Student("Kacper", "Nowak", 24, 5.0));
-		studentRepository.save(new Student("Dominik", "Kalinowski", 22, 4.5));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
-		studentRepository.save(new Student("Rafał", "Nowak", 23, 3.0));
+		studentRepository.save(new Student("Michał", "Zakrzewski", 4.5));
+		studentRepository.save(new Student("Kacper", "Nowak",  5.0));
+		studentRepository.save(new Student("Dominik", "Kalinowski",  4.5));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+		studentRepository.save(new Student("Rafał", "Nowak",  3.0));
+
 
 
 	}

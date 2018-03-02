@@ -12,13 +12,11 @@ public class Student {
     private Integer id; //primary key
     private String firstName;
     private String lastName;
-    private Integer age;
     private Double degree;
 
-    public Student(String firstName, String lastName, Integer age, Double degree) {
+    public Student(String firstName, String lastName, Double degree) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
         this.degree = degree;
     }
 
@@ -32,7 +30,6 @@ public class Student {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", age=" + age +
                 ", degree=" + degree +
                 '}';
     }
@@ -59,14 +56,6 @@ public class Student {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
     }
 
     public Double getDegree() {

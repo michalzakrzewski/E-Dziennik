@@ -11,7 +11,6 @@ $(document).ready(function () {
                 $('.myForm #id').val(student.id);
                 $('.myForm #firstName').val(student.firstName);
                 $('.myForm #lastName').val(student.lastName);
-                $('.myForm #age').val(student.age);
                 $('.myForm #degree').val(student.degree);
             });
 
@@ -20,7 +19,6 @@ $(document).ready(function () {
             $('.myForm #id').val('');
             $('.myForm #firstName').val('');
             $('.myForm #lastName').val();
-            $('.myForm #age').val('');
             $('.myForm #degree').val('');
             $('.myForm #exampleModal').modal();
         }
