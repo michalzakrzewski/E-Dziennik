@@ -1,5 +1,5 @@
-### E-Dziennik
-## Table of contents
+# E-Dziennik
+## Spis treści
 * [O aplikacji](#o-aplikacji)
 * [Technologie](#technologie)
 
